@@ -1,6 +1,4 @@
 .*
 /GAN_Model/Models/
 /GAN_Model/__pycache__/
-/.DS_Store
-GAN_Model/__pycache__/util.cpython-310.pyc
 !/.gitignore
