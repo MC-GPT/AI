@@ -165,7 +165,7 @@ def display_image(image, size=None, mode='nearest', unnorm=False, title=''):
         image = F.interpolate(image, size=(size,size), mode=mode)
     if image.dim() == 4:
         image = image[0]
-    image = ((image.clamp(-1,1)+1)/2).permute(1, 2, 0).detach().numpy()
+    image = ((image.clamp(-1,1)+1)/2).cpu().permute(1, 2, 0).detach().numpy()
     plt.figure()
     plt.title(title)
     plt.axis('off')
