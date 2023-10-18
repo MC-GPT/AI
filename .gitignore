@@ -1,4 +1,5 @@
 .*
 /GAN_Model/Models/
 /GAN_Model/__pycache__/
+/GAN_Model/op/__pycache__/
 !/.gitignore
