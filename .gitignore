@@ -1,0 +1,5 @@
+.*
+/GAN_Model/Models/
+/GAN_Model/__pycache__/
+/.DS_Store
+!/.gitignore
