@@ -1,4 +1,5 @@
 import math
+import ntpath
 
 import tensorflow as tf
 from retinaface import RetinaFace
@@ -84,9 +85,15 @@ def img_crop(img_path):
 
         x1 = max(0, int(cx - crop_size / 2))
         x2 = int(cx + crop_size / 2)
-        y1 = max(0, int(cy - crop_size / 2))
-        y2 = int(cy + crop_size / 2)
+        y1 = max(0, int(cy - crop_size *0.6))
+        y2 = int(cy + crop_size *0.4)
 
         face_img = rotated_img[y1:y2, x1:x2]
 
         return face_img
+    
+    
+pic_path = 'imgs/Jenny.jpg'
+crop_img = Image.fromarray(img_crop(pic_path))
+crop_img.save("imgs/crop_Jenny.jpg")
+#crop_img.save(f'imgs/crop_{ntpath.basename(file_path)}')
