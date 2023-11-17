@@ -1,5 +1,7 @@
 .*
+/GAN_Model/face.pt8udytfs5tmp
 /GAN_Model/Models/
 /GAN_Model/__pycache__/
 /GAN_Model/op/__pycache__/
+/GAN_Model/inversion_stats.npz
 !/.gitignore
