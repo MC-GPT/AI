@@ -86,7 +86,7 @@ def style2list(s):
     output = []
     count = 0 
     for size in style2list_len:
-        output.append(s[:, count:count+size])
+        output.append(s[:,count:count+size])
         count += size
     return output
 
